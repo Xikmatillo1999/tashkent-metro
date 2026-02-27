@@ -257,11 +257,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const container = document.getElementById('qr-container');
-
-            // Generate absolute base URL to the index.html for scanning
-            // Example: https://metro-tashkent.app/index.html
-            // If running locally, this uses the local path. Replace with production URL before official printing.
-            const baseUrl = window.location.href.replace('qr-generator.html', 'index.html');
+            const baseUrl = 'https://xikmatillo1999.github.io/tashkent-metro/index.html';
 
             appData.stationsList.forEach(station => {
                 const deepLink = `${baseUrl}?station=${station.id}`;
